@@ -17,6 +17,8 @@
     RewriteRule ^ server.php
 </IfModule>
 
+DirectoryIndex server.php
+
 # #disable directory browsing  
 
 # Options – Indexes 
