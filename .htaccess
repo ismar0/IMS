@@ -17,26 +17,26 @@
     RewriteRule ^ server.php
 </IfModule>
 
-#disable directory browsing  
+# #disable directory browsing  
 
-Options – Indexes 
+# Options – Indexes 
 
-#PROTECT ENV FILE 
+# #PROTECT ENV FILE 
 
-<Files .env> 
+# <Files .env> 
 
-Order allow,deny 
+# Order allow,deny 
 
-Deny from all 
+# Deny from all 
 
-</Files> 
+# </Files> 
 
-#PROTECT ENV FILE 
+# #PROTECT ENV FILE 
 
-<Files .htaccess> 
+# <Files .htaccess> 
 
-Order allow,deny 
+# Order allow,deny 
 
-Deny from all 
+# Deny from all 
 
-</Files> 
+# </Files> 
