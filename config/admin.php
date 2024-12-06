@@ -13,7 +13,7 @@ return [
     | login page.
     |
     */
-    'name' => 'INVENTORY APP',
+    'name' => 'JABARO System',
 
     /*
     |--------------------------------------------------------------------------
@@ -24,7 +24,7 @@ return [
     | `img` tag, eg '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo' => '<b>INVENTORY</b> admin',
+    'logo' => 'JABARO ERP',
 
     /*
     |--------------------------------------------------------------------------
@@ -36,7 +36,7 @@ return [
     | '<img src="http://logo-url" alt="Admin logo">'.
     |
     */
-    'logo-mini' => '<b>INV</b>',
+    'logo-mini' => '<b>JBRO</b>',
 
     /*
     |--------------------------------------------------------------------------
