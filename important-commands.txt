@@ -1,0 +1,25 @@
+composer config -g secure-http false
+composer clearcache
+
+install template laravel-admin, panduan di https://laravel-admin.org/
+
+tambah code berikut di config/filesystems.php
+'admin' => [
+             'driver' => 'local', 
+             'root' => storage_path('app/public'), 
+             'url' => env('APP_URL').'/storage', 'visibility' => 'public', 
+        ],
+
+replace ResourceGenerator with https://github.com/open-admin-org/open-admin/blob/develop/src/Console/ResourceGenerator.php
+
+https://github.com/laravel-admin-extensions/grid-lightbox
+
+--buat model
+php artisan make:model StockRecord -m
+--buat controller
+php artisan admin:make CompanyEditController --model=App\Models\Company
+--tambah coloumn di table
+php artisan make:migration add_profit_col_stock_records --table=stock_records
+
+
+php artisan migrate

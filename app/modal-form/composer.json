@@ -1,0 +1,36 @@
+{
+    "name": "tokarskimarcin/laravel-admin-ext-modal-form",
+    "description": "Extension allows create modal form",
+    "type": "library",
+    "keywords": ["laravel-admin", "extension", "modal-form"],
+    "homepage": "https://github.com/tokarskimarcin/laravel-admin-ext-modal-form",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcin Tokarski",
+            "email": "marcinxx1994@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "encore/laravel-admin": "~1.6"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Encore\\ModalForm\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Encore\\ModalForm\\ModalFormServiceProvider"
+            ],
+            "aliases": {
+                "Modal": "Encore\\ModalForm\\Facades\\Modal"
+            }
+        }
+    }
+}
